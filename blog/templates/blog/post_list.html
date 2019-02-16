@@ -1,29 +1,4 @@
 <html>
-<body>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</body>
-</html>
-<html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
-<h1>ouuuyeahhhh</h1>
-<h2>I'm the one and only</h2>
-<p>Tiembla Trump!!! En cuanto salga de aquí hackeo la CIA. <em>holi</em></p> <strong>jurrrlo veo todonegro</strong>
-<a href="https://djangogirls.org">link</a>
-<ul>
-  <li>café</li>
-  <li>más café</li>
-  <li>un poquito más</li>
-</ul>
-<div></div>
-<html>
     <head>
         <title>Django Girls blog</title>
     </head>
@@ -32,11 +7,12 @@
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+          <div>
+            {% for post in posts %}
+                {{ post }}<br >
+            {% endfor %}
+          </div>
+
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
